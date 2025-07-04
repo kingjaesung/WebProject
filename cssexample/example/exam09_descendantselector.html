@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 정보 - 하위 선택자와 자식 선택자 예제</title>
+
+        <!--#은 ID선택을 뜻하고 .은 Class선택을 뜻한다-->
+        <!--그냥 Style 사용시 하위 사용자-->
+        <!-- > 붙일시 자식 사용자-->
+    <style>
+        div#movieSection h3 {
+            color: darkgreen;
+        }
+
+        div#recommend>h3 {
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="movieSection">
+        <h3>최신영화</h3>
+        <div>
+            <h3> 슈빠만~</h3>
+            <p>감독: 제임스 건 | 장르: 액션, 어드벤쳐</p>
+        </div>
+    </div>
+    <div id="recommend">
+        <h3>추천영화</h3>
+        <div>
+            <h3> F1 더 무비</h3>
+            <p>감독: 조셉 코신스키 | 장르: 드라마 액션</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

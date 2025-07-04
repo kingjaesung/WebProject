@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 우선 순위</title>
+
+    <style type="text/css">
+        p{
+            font-size: 25px;
+            font-weight: bold;
+            color: #8041d9;
+        }
+
+        .text{
+            font-size: 15px;
+            font-family: 휴먼옉체,맑은고딕;
+            color: rgb(255, 0, 121);
+        }
+
+        #font{
+            font-size: 35px;
+            font-family: "Times New Roman","Comic sans MS";
+            color: gray;
+        }
+
+        #font1{
+            background-color: rgb(30, 126, 97);
+        }
+
+        .ikujo{
+            background-color: #8041d9;
+        }
+    </style>
+
+</head>
+<body>
+    <h1> [CSS를 이용한 폰트]</h1>
+    <p class = "text" id="font1"> Good Morning</p>
+    <p class="text" id="font1"> 안녕하시렵니까요 </p>
+    <p class="text" id="font" style="color:red; font-size: 50px;"> Good Morning</p>
+    <p>사와디캅</p>
+    <span class="text" id="font"> 안녕하세요 </span>
+    
+</body>
+</html>

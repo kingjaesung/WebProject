@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--from 태그는 사용자 입력 데이터를 서버로 전송할 수 있게 해주는 폼 영역-->
+    <form >
+        <!--feildset은 폼 안에서 관련된 입력 요소들을 그룹으로 묶는 ㅌ태그-->
+        <!--기본적으로 테두리 상자가 생겨 시각적으로 그룹 표시-->
+        <fieldset>
+            <!--legend는 fieldset태그 내부에서 그 그룹의 제목 표기-->
+            <legend> 개인정보입력</legend>
+            <div>
+                <label for="name"> 이름 </label>
+                <!--required는 반드시 입력하라고 하는 기능
+                autofocus는 페이지를 열자마자 커서가 깜빡이게 하는 속성-->
+                <input type="text" name="name" id="name"
+                    placeholder = "이름을 입력하세잉"
+                    required
+                    autofocus />
+            </div> 
+            <div>
+                <label for="email"> 이메일 </label>
+                <input type="email" name="email" id="email"
+                placeholder = "전화번호를 입력하세요"
+                required />
+            </div>
+            <div>
+                <label for="phone"> 전화 </label>
+                <input type="text" name="phone" id="phone"
+                placeholder="전화번호를 입력하세요"
+                required>
+            </div>
+            <div>
+                <label for="photo"> 파일제출</label>
+                <input type="file" name="photo" id="photo"
+                accept="image/gif, image/jpeg, image/png" />
+            </div>
+            <div>
+                <button type="submit"> 등록 </button>
+                <button type="reset"> 취소</button>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>

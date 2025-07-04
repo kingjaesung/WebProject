@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자 도서 목록</title>
+    <style>
+        div[class ^="book"]{
+            font-weight: bold;
+            margin: 10px 0;
+            color: darkblue;
+        }
+        a[href$= ".pdf"]{
+            background : url('pdf_icon.png') center right no-repeat;
+            padding-right: 25px;
+            color: crimson;
+        }
+        a[href$= ".equb"]{
+            background: url("KakaoTalk_20250702_161334326.jpg") center right no-repeat;
+            padding-right: 25px;
+            color: green;
+        }
+
+        a[target="_blank"]{
+            font-style: italic;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h2>도서 목록</h2>
+    <div class="book_korean">
+        🚗자바 프로그래밍 - 박은종 저
+        <br>
+        <a href="books/java.pdf" target="_blank">PDF 다운로드</a>
+    </div>
+    <div class="book_foreign">
+        🛴Clean Code - Robert C. Martin 저
+        <br>
+        <a href="books/clean.equb" target="_blank"> EPUB 다운로드</a>
+    </div>
+    <div class="book_korean">
+        🌉 모던 자바스크립트 & Node.js - 이창현 저
+        <br>
+        <a href="books/js.pdf"> PDF 다운로드</a>
+    </div>
+    <div class="book_foreign">
+        🧭오라클로 배우는 SQL - 이지훈
+        <br>
+        <a href="books/sql.equb" target="_blank"> EPUB 다운로드</a>
+    </div>
+</body>
+</html>

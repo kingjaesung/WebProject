@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 등록</title>
+       <!--width - 크기지정, height - 얼마나 크게-->
+       <!--margin - 바깥 , padding - 안쪽 여백-->
+       <!--display : block 한줄 꽉차게 - 줄바꿈 생김-->
+       <!--auto - 가운데 정렬-->
+       <!--padding : 8px 입력창 안에 글자 너무 붙지 마라-->
+    
+    <style>
+        div {
+            width: 500px;
+            margin: 20px auto
+        }
+
+        label {
+            display: block;
+            margin: 20px auto;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <div>
+    <h2> 게시글 등록</h2>
+    <form>
+        <label for="writer"> 작성자 </label>
+        <input type="text " id="writer" name="writer" required>
+
+        <label for="title"> 제목 </label>
+        <input type="text" name="title" id="title">
+
+        <label for="content"> 내용 </label>
+        <textarea id="content" name="content" rows="10" required> </textarea>
+
+        <button type="submit"> 등록 </button>
+        <button type="reset"> 초기화 </button>
+    </form>
+    </div>
+</body>
+</html>

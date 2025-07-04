@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 클래스 선택자 확인</title>
+    <style>
+        h1::before{
+            content: "☆";
+            color: blue;
+        }
+        h1::after {
+            content: "★";
+            color: blue;
+        }
+        <!--h1 바로 뒤에 오는 p  태그만 갈색으로 변경-->
+        h1 + p::first-line{
+            color: brown;
+        }
+
+        #contents p::first-letter{
+            font-size: 28px;
+            background-color: gray;
+            color: white;
+            font-weight: bold;
+        }
+        #contents p:nth-child(even){
+            color:orange;
+        }
+        #contents p:nth-child(odd){
+            color:blue;
+        }
+        #word > div:nth-last-child(3){
+            color:red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Famous Saying</h1>
+    <p>The World is a beautiful book, but of little use to him who cannot read it.</p>
+    <div id="contents">
+        <p>가장 위대한 영광은 한번도 실패하지 않음이 아니라 실패할 때마다 다시 일어서는데에 있다
+            <br> Our greatest glory is not in never falling, but in riginh every time we fall
+        </p>
+        <p>물방울이 바위를 뚫을 수 있는</p>
+        <p>잠깐 한번 노력해 보는 것으로는 아무것도 이룰 수가 없다</p>
+        <p>공부는 시간이 부족한 것이 아니라 노력이 부족</p>
+        <p>승자와 패자의 분리</p>
+    </div>
+
+    <div id="word">
+        <div>오: 오늘만 그런거 아니잖아</div>
+        <div>징: 징그럽게 생긴거</div>
+        <div>어: 어제도 그랬잖아.</div>
+    </div>
+
+</body>
+
+</html>
