@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>확장된 테두리 스타일 예제</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: 'Nanum Gothic' , sans-serif ;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .box {
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+
+            width: 70px;
+            height: 70px;
+            margin: 5px;
+            background-color: white;
+            color: black;
+            font-size: 12px;
+        }
+        .none {border: 2px none black }
+        .solid {border: 2px solid black; }
+        .dotted {border: 2px dotted black;}
+        .dashed {border: 2px dashed blue;}
+        .double {border : 4px double red}
+
+        .combo {
+            border-top: 1px solid #0088dd;
+            border-bottom: 12px solid green;
+        }
+
+        .rounded {
+            border: 1px solid #0088dd;
+            border-top-left-radius: 8px ;
+            border-bottom-left-radius: 20px;
+        }
+        img {
+            border:2px solid black;
+            border-radius:20px;
+        }
+        p img {
+            border-radius: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>테두리 스타일 모음</h2>
+    <div class = "container"> 
+    <div class = "box none"> none </div>
+    <div class = "box solid"> solid </div>
+    <div class = "box dotted"> dotted </div>
+    <div class = "box dashed"> dashed </div>
+    <div class = "box double"> double </div>
+    <div class = "box combo"> combo</div>
+    <div class = "box rounded"> round </div>
+    </div>
+    <img src="/cssexample/image/다운로드.jpg" alt="">
+    <img src="/cssexample/image/다운로드 (1).jpg" alt="">
+    <img src="/cssexample/image/다운로드 (2).jpg" alt="">
+    <p>
+    <img src="/cssexample/image/i14732460223.jpg" alt="">
+        </p>
+</body>
+</html>

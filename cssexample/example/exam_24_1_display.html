@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display - 블록과 인라인</title>
+
+    <style>
+        div[class^="content"] img{
+            width: 250px;
+            height: 220px;
+            margin: 10px 5px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 3px 0px #ccc;
+        }
+
+        .content2 img{
+            display: block;
+        }
+
+        div[class^="data"]{
+            width: 200px;
+            height: auto;
+            margin: 10px 5px;
+            padding: 5px;
+            border: 1px solid black;
+
+        }
+
+        #text1{background-color: lightyellow;}
+        #text2{background-color: lightgreen;}
+        #text3{background-color: lightblue;}
+
+        .data2 div{
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h4>인라인 요소</h4>
+    <div class = "content1">
+        <img src="/cssexample/image/다운로드 (1).jpg" alt="">
+        <img src="/cssexample/image/다운로드 (2).jpg" alt="">
+        <img src="/cssexample/image/다운로드.jpg" alt="">
+    </div>
+
+
+    <h4>인라인 요소를 블록 요소</h4>
+
+    <div class="content2">
+        <img src="/cssexample/image/다운로드 (1).jpg" alt="">
+        <img src="/cssexample/image/다운로드 (2).jpg" alt="">
+        <img src="/cssexample/image/다운로드.jpg" alt="">
+    </div>
+
+
+    <h4>블록요소</h4>
+
+    <div class="data1">
+        <h2>노력 명언</h2>
+        <div id="text1">
+            <p>서 시(序詩)
+                - 윤동주 -
+                죽는 날까지 하늘을 우러러
+                한 점 부끄럼이 없기를,
+                잎새에 이는 바람에도
+            </p>
+            <p>
+                나는 괴로워했다.
+                별을 노래하는 마음으로
+                모든 죽어가는 것을 사랑해야지.
+                그리고 나한테 주어진 길을
+                걸어가야겠다.
+
+                오늘 밤에도 별이 바람에 스치운다.
+            </p>
+        </div>
+
+        <div id="text2">
+            <p>엄마 걱정
+                -기형도-
+
+                열무 삼십 단을 이고
+                시장에 간 우리 엄마
+                안 오시네, 해는 시든 지 오래
+                나는 찬밥처럼 방에 담겨
+                아무리 천천히 숙제를 해도
+                엄마 안 오시네, 배추잎 같은 발소리 타박타박
+                안 들리네, 어둡고 무서워
+                금 간 창 틈으로 고요히 빗소리
+                빈 방에 혼자 엎드려 훌쩍거리던
+
+                아주 먼 옛날
+                지금도 내 눈시울을 뜨겁게 하는
+                그 시절, 내 유년의 윗목.
+
+                -시집 <입 속의 검은 잎>(1989)-</p>
+        </div>
+
+        <div id="text3">
+            <p>풀꽃
+                나태주 / 시인
+
+
+                자세히 보아야
+                예쁘다
+
+                오래 보아야
+                사랑스럽다
+
+                너도
+                그렇다.
+            </p>
+            <p>꽃밭
+                -서덕준
+
+                마음에 사무치면 꽃이 핀다더니
+                너 때문에 내 마음엔 이미 발 디딜 틈 없는
+                너만의 꽃밭이 생겼더구나
+            </p>
+        </div>
+
+       
+
+
+    </div>
+
+     <h4>블록 요소를 인라인 요소로 설정</h4>
+
+     <div class="data2">
+        <h2>노력 명언</h2>
+        <div id="text1">
+            <p>서 시(序詩)
+                - 윤동주 -
+                죽는 날까지 하늘을 우러러
+                한 점 부끄럼이 없기를,
+                잎새에 이는 바람에도
+            </p>
+            <p>
+                나는 괴로워했다.
+                별을 노래하는 마음으로
+                모든 죽어가는 것을 사랑해야지.
+                그리고 나한테 주어진 길을
+                걸어가야겠다.
+
+                오늘 밤에도 별이 바람에 스치운다.
+            </p>
+        </div>
+
+        <div id="text2">
+            <p>엄마 걱정
+                -기형도-
+
+                열무 삼십 단을 이고
+                시장에 간 우리 엄마
+                안 오시네, 해는 시든 지 오래
+                나는 찬밥처럼 방에 담겨
+                아무리 천천히 숙제를 해도
+                엄마 안 오시네, 배추잎 같은 발소리 타박타박
+                안 들리네, 어둡고 무서워
+                금 간 창 틈으로 고요히 빗소리
+                빈 방에 혼자 엎드려 훌쩍거리던
+
+                아주 먼 옛날
+                지금도 내 눈시울을 뜨겁게 하는
+                그 시절, 내 유년의 윗목.
+
+                -시집 <입 속의 검은 잎>(1989)-</p>
+        </div>
+
+        <div id="text3">
+            <p>풀꽃
+                나태주 / 시인
+
+
+                자세히 보아야
+                예쁘다
+
+                오래 보아야
+                사랑스럽다
+
+                너도
+                그렇다.
+            </p>
+            <p>꽃밭
+                -서덕준
+
+                마음에 사무치면 꽃이 핀다더니
+                너 때문에 내 마음엔 이미 발 디딜 틈 없는
+                너만의 꽃밭이 생겼더구나
+            </p>
+        </div>
+
+       
+
+
+    </div>
+        
+
+</body>
+
+</html>

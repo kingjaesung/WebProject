@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position과 z-index 속서엉t</title>
+
+
+    <style>
+        
+    .box {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        text-align: center;
+        line-height: 100px;
+    
+    }
+
+    .box:nth-child(1){
+        background-color: red;
+        left: 10px;
+        top: 10px;
+        z-index: 20;
+    }
+
+    
+    .box:nth-child(2){
+        background-color: green;
+        left: 50px;
+        top: 50px;
+        z-index: 3;
+    }
+
+
+    .box:nth-child(3){
+        background-color: blue;
+        left: 100px;
+        top: 100px;
+        z-index: 2;
+    }
+
+    </style>
+
+    
+
+
+</head>
+<body>
+    <div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+        <div class="box"> </div>
+    </div>
+    
+</body>
+</html>

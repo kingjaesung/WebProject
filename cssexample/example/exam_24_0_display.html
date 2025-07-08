@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- 블록과 인라인</title>
+
+    <style>
+        span{
+            width: 100px; height: 100px;
+        }
+
+        div#none span{display: none;}
+        div#inline span{display: inline;}
+        div#block span{display: block;}
+        div#inblock span{display: inline-block;}
+
+        div .html{
+            background-color: #FFE400;
+        }
+
+        div .css{
+            background-color: #B5B2FF;
+            visibility: hidden;
+        }
+
+        div .js {
+            background-color: #D9418C;
+        }
+    </style>
+
+</head>
+<body>
+    <div id= "none"> 웹표준은 none
+        <span class="html"> HTML </span> 구조,
+        <span class="css"> CSS</span> 디자인,
+        <span class="js"> JasSung</span>동작이 있습니다
+    </div>
+
+    <!--block 줄바꿈 한 후 새로운 라인의 전체 영억(너비) 확보-->
+      <div id= "block"> 웹표준은 block
+        <span class="html"> HTML </span> 구조,
+        <span class="css"> CSS</span> 디자인,
+        <span class="js"> JasSung</span>동작이 있습니다
+    </div>
+
+    <!--inblock inline을 bolck처럼 만들어서 바로 옆에 나열-->
+      <div id= "inblock"> 웹표준은 in block
+        <span class="html"> HTML </span> 구조,
+        <span class="css"> CSS</span> 디자인,
+        <span class="js"> JasSung</span>동작이 있습니다
+    </div>
+    <!--inline 새로운 라인에서 시작하지 않고 너비도 해당 내용 만큼만 영역 확보-->
+      <div id= "inline"> 웹표준은 inline
+        <span class="html"> HTML </span> 구조,
+        <span class="css"> CSS</span> 디자인,
+        <span class="js"> JasSung</span>동작이 있습니다
+    </div>
+
+
+</body>
+</html>
