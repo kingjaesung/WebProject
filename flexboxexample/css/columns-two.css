@@ -1,0 +1,48 @@
+body{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+main h1{
+    text-align: center;
+    color: #2a6f97;
+}
+section{
+    display: flex;
+    color: #2a6f97;
+}
+
+.column1of2{
+    /*flex 아이템이 처음 차지하는 기본 너비 (또는 높이)를 정해주는 속성*/
+    flex-basis: 558px;
+    background-color: #f7fbff;
+    padding: 15px;
+    border-radius: 20px;
+}
+.column2of2{
+    flex-basis: 382px;
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    height: fit-content;
+}
+
+.column1of2 h3 {
+    margin-top: 0;
+    color: #2a6f97;
+}
+
+.column1of2 ul{
+    /*순서없는 목록 앞에●점 표시*/
+    list-style: disc;
+    padding-left: 20px;
+}
+
+
+.column1of2 li{
+    margin-bottom: 8px;
+}

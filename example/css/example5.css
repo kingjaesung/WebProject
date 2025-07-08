@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(94, 201, 183);
+    background-image: url("/cssexample/image/tulip.gif");
+    justify-content: center; 
+     align-items: center;
+}
+
+
+header {
+    background-image: url("/cssexample/image/star.png");
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    justify-content: center; 
+     align-items: center;
+}
+
+header h1 {
+    letter-spacing: 100px
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+     align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    border: 2px solid lightpink;
+    width: 300px;
+    height: 250px;
+}
+
+.bbobby {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    overflow: scroll;
+}
+
+a {
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+     justify-content: center; 
+     align-items: center;
+}
+
+.bbobby p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
