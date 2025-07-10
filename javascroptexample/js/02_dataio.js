@@ -117,3 +117,8 @@ function fnBtn(){
     namePrint.style.display = "inline-block";
     namePrint.style.width = "auto";
 }
+
+document.getElementById("btn").onclick = function(){
+    const nameValue =  document.getElementById("name").value;
+    document.getElementById("namePrint").innerHTML = nameValue ? '${namevalue}님 반갑습니다~.' : "이름을 입력해주세요";
+}

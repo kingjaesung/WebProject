@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>성적 구하기 </h1>
+    <form action="">
+        <input id="kor" class="subject" type="text" placeholder="국어점수(kor)">
+        <input id="eng" class="subject" type="text" placeholder="영어점수(ENG)">
+        <input id="math" class="subject" type="text" placeholder="수학점수(math)">
+        <button type="button" onclick="subjectEvr()">성적 구하기</button>
+        <br>
+        <input id="total" type="text" placeholder="합계" readonly>
+        <input id="evr" type="text" placeholder="평균"readonly>
+        <input id="grade" type="text" placeholder="학점"readonly>
+    </form>
+
+
+    <hr>
+
+    <h1>숫자 맞추기 게임</h1>
+<div>
+    <label for="number">숫자: </label>
+    <input type="text" id="anser"  onkeyup="inputEnter(event)">
+    <button type="button" onclick="fnRandom()">확인</button>
+    <br>
+    <label for="count">추측횟수: </label>
+    <input type="text" id="count">
+    <label for="hint">힌트: </label>
+    <input type="text"  id="hint">
+</div>
+
+    <hr>
+    <h1>간단한 반복문 실습</h1>
+    <pre>
+        1.반복문을 사용하여 h1~h6태그로 Hello JavaSCript를 출력해주세요.
+        2.반복문을 사용하여 이미지를 출력 해주세요
+    </pre>
+    <button type="button" onclick="fnHelloJava()">출력</button>
+    <div id="div1"></div>
+    <div id="div2"></div>
+
+    <script src="/javascroptexample/js/05_controlStatment.js"></script>
+
+</body>
+
+</html>
