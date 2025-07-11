@@ -79,14 +79,15 @@ function fnRandom() {
         hint.value = `${anser.value}보다 높습니다`;
     }
 
+
     anser.value = "";
 
 
 
 }
 
-function inputEnter(event){
-    if(event.key == "Enter") {
+function inputEnter(event) {
+    if (event.key == "Enter") {
         fnRandom();
     }
 }
@@ -106,3 +107,21 @@ function fnHelloJava() {
 
 
 }
+
+function multiply() {
+    let multiply = document.getElementById("multiply");
+    multiply.innerHTML = `
+        <table border = "solid">
+    <tr>
+        <th>1단</th>
+    </tr>
+    <tr>
+        <td>1</td>
+    </tr>
+    <tr> 
+        <td>2</td>
+    </tr>
+    </table >
+        ` ; 
+}
+

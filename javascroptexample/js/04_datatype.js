@@ -32,3 +32,14 @@ for (i = 0; i<3; i++){
     console.log("Test+_1 i" + i);
 }
 console.log("-----------");
+
+// 5.조건문
+console.log (num)
+if(num !== 10){
+    var num = 20;
+    console.log("num !== 10");
+} else{
+    console.log("num=" + num);
+}
+console.log("num =" + num);
+console.log("-----------------")
