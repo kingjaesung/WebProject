@@ -1,0 +1,17 @@
+.count{
+    width: 30px;
+}
+
+.total{
+    width: 90px;
+}
+
+table{
+    border-collapse: collapse;
+   
+}
+
+td,th{
+    border: 1px solid black;
+     padding: 5px;
+}

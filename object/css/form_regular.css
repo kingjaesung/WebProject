@@ -1,0 +1,34 @@
+   .area {
+       width: 500px;
+       min-height: 300px;
+       border: 1px solid black;
+       margin-top: 8px;
+   }
+
+   .confirm {
+       color: green;
+   }
+
+   .error {
+       color: red;
+   }
+
+   legend {
+       font-weight: bold;
+       font-size: 1.2em;
+       color: navy;
+
+   }
+
+   .signupLabel {
+       margin-right: 40px;
+   }
+
+   fieldset {
+       width: fit-content;
+       padding: 20px;
+   }
+
+   #divButton {
+       text-align: center;
+   }
