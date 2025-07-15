@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>form 객체</title>
 
+    
+    <link rel="stylesheet" href="/object/css/form.css">
     <style>
         #form1 {
             border: 1px solid rgb(146, 139, 139);
@@ -22,9 +24,13 @@
 
 
     <h3>from 예제1</h3>
+<<<<<<< HEAD
     <input type="text" id="formInput1">
     <br>
     <textarea name="" id=""></textarea>
+=======
+    <input type="text" id="formInput1" placeholder="원하시는 텍스트를 입력하세요">
+>>>>>>> 62a4948199e1f2de16bdf847af3d9a78c3edf8a9
     <div id="form1"></div>
 
 
@@ -41,7 +47,48 @@
     <br>
     <button type="button" id="outputButton">출력</button>
     <div id="form2"></div>
-    
+
+
+    <h3>form 예제3</h3>
+    <div>
+        <p>서적 주문서</p>
+        <form action="">
+        <table>
+            <tr>
+                <th>첵 제목</th>
+                <th> 가격</th>
+                <th> 수량 </th>
+                <th> 합계 </th>
+            </tr>
+            <tr>
+                <td>멀티미디어 배움터2.0</td>
+                <td>25,000원</td>
+                <td><input class="count" type="text" id = "book1Count" placeholder="0"></td>
+                <td><input class="total" type="text" id="book1Total" value="0" readonly>원</td>
+            </tr>
+            <tr>
+                <td>모바일 멀티미디어</td>
+                <td>27,000원</td>
+                <td><input class="count" type="text" id = "book2Count" placeholder="0"></td>
+                <td><input class="total" type="text" id="book2Total" value="0" readonly>원</td>
+            </tr>
+            <tr>
+                <td>자바입문: 이론과 실습</td>
+                <td>25,000원</td>
+                <td><input class="count" type="text" id = "book3Count" placeholder="0"></td>
+                <td><input class="total" type="text" id="book3Total" value="0" readonly>원</td>
+            </tr>
+            <tr>
+                <td>총합계</td>
+                <td></td>
+                <td><input class="count" type="text" id = "totalBookCount" placeholder="0" readonly></td>
+                <td><input class="total" type="text" id="bookTotal" value="0" readonly>원</td>
+            </tr>
+        </table>
+        <button type="button" onclick="addPrice1()">합계계산</button>
+        <button type="reset" >초기화</button>
+        </form>
+    </div>
     <script src="/object/js/form.js"></script>
 </body>
 
